@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    PACKAGES PAGE
+
+    Displays all four gaming packages:
+
+    1. The Ultimate Gamer Pass
+    2. The VIP Gaming Experience
+    3. The E-Sports Training Package
+    4. The Birthday Party Package
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <include
+        android:id="@+id/packagesHeader"
+        layout="@layout/header" />
+
+    <!-- Scrollable page -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OUR GAMING PACKAGES"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <!-- Introduction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Choose from our available gaming packages."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="15sp" />
+
+            <!-- Search -->
+            <EditText
+                android:id="@+id/packageSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Search packages..."
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/search_background" />
+
+            <!-- Package list -->
+            <LinearLayout
+                android:id="@+id/packagesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp" />
+
+            <!-- Services link -->
+            <Button
+                android:id="@+id/viewServicesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="VIEW SERVICES" />
+
+            <!-- Separate fee calculation -->
+            <Button
+                android:id="@+id/calculateFeesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CALCULATE FEES" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Footer -->
+
+    <include
+        layout="@layout/footer" />
+
+</LinearLayout>

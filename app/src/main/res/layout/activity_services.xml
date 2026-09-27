@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    SERVICES PAGE
+
+    Displays all three individual experiences:
+
+    1. The Virtual Reality Experience
+    2. The Racing Simulator Challenge
+    3. The Escape Room Challenge
+
+    The Calculate Fees button does NOT calculate fees
+    here. It opens the separate fee-calculation page.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <include
+        android:id="@+id/servicesHeader"
+        layout="@layout/header" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Page heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OUR SERVICES"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <!-- Page introduction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Explore our individual gaming experiences."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="15sp" />
+
+            <!-- Search -->
+            <EditText
+                android:id="@+id/serviceSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Search services..."
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/search_background" />
+
+            <!-- Services list -->
+            <LinearLayout
+                android:id="@+id/servicesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp" />
+
+            <!-- Packages link -->
+            <Button
+                android:id="@+id/viewPackagesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="VIEW GAMING PACKAGES" />
+
+            <!-- Separate fee calculation -->
+            <Button
+                android:id="@+id/calculateFeesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CALCULATE FEES" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Footer -->
+
+    <include
+        layout="@layout/footer" />
+
+</LinearLayout>

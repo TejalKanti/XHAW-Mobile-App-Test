@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Drop-down navigation menu.
+
+    The report specifically requires a drop-down menu,
+    so this menu provides the main navigation options.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/navigation_background"
+    android:padding="8dp">
+
+    <!-- Home -->
+    <TextView
+        android:id="@+id/menuHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- About Us -->
+    <TextView
+        android:id="@+id/menuAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT US"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Services -->
+    <TextView
+        android:id="@+id/menuServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SERVICES"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Packages -->
+    <TextView
+        android:id="@+id/menuPackages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PACKAGES"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Fee Calculator -->
+    <TextView
+        android:id="@+id/menuFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEE CALCULATOR"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Contact -->
+    <TextView
+        android:id="@+id/menuContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+</LinearLayout>
